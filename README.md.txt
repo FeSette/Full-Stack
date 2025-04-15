@@ -1,0 +1,1 @@
+🚀 Um repositório destinado a jornada do curso Full-Stack da Rocketseat, ministrado pelo Mayk Brito. ⚒
