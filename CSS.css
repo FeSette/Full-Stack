@@ -1,12 +1,13 @@
-Comentários e Anotações
-/* 
+/*
+
+# Comentários e Anotações
+    
     Utilizamos para criar comentários em CSS.
     Comentários são úteis para documentar o código e explicar o que cada parte faz.
     Eles não afetam a renderização do CSS e são ignorados pelo navegador.
-*/
 
-Anatomia do Código CSS
-/* 
+# Anatomia do Código CSS
+
     - Seletor: Define o elemento HTML ao qual os estilos serão aplicados.
     - Propriedade: A característica do elemento que será estilizada (ex: cor, tamanho).
     - Valor: O valor atribuído à propriedade (ex: vermelho, 16px).
@@ -17,11 +18,9 @@ Anatomia do Código CSS
       letter-spacing: 2px;
       text-transform: uppercase; 
     }
-*/
 
-Cascata / Hierarquia de regras
+# Cascata / Hierarquia de regras
 
-/* 
     - O CSS é chamado de Cascading Style Sheets porque as regras podem ser aplicadas em cascata.
     - A hierarquia de regras é determinada pela especificidade dos seletores e pela ordem em que aparecem.
     - Regras mais específicas têm prioridade sobre regras menos específicas.
@@ -47,10 +46,9 @@ Cascata / Hierarquia de regras
         - Exemplo: h1 { color: red !important; }  essa regra terá prioridade sobre outras regras.
         - Use com cautela, pois pode dificultar a manutenção do código.
         - Evite usar !important, a menos que seja absolutamente necessário.
-*/
 
-Valores e Unidades de Medidas
-/* 
+# Valores e Unidades de Medidas
+
     - O CSS suporta várias unidades de medida, incluindo:
         - px: pixels (unidade fixa)
         - em: unidade relativa ao tamanho da fonte do elemento pai
@@ -72,10 +70,9 @@ Valores e Unidades de Medidas
         - text-align: center;  alinhamento do texto
         - text-decoration: underline;  decoração do texto (sublinhado)
         - text-transform: uppercase;  transformação do texto (caixa alta)  
-*/
 
-Seletores CSS
-/* 
+# Seletores CSS
+
     - Os seletores CSS são usados para selecionar os elementos HTML que serão estilizados.
     - Existem vários tipos de seletores, incluindo:
         - Seletor de elemento: seleciona todos os elementos de um tipo específico:
@@ -124,4 +121,5 @@ Seletores CSS
         - div.classe { color: red; }  todos os elementos div com a classe "classe" ficarão vermelhos
         - #id .classe { color: blue; }  todos os elementos com a classe "classe" dentro do elemento com o ID "id" ficarão azuis
         - div > .classe { color: green; }  todos os elementos com a classe "classe" que são filhos diretos de uma div ficarão verdes
+
 */
