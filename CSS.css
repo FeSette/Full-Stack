@@ -1,0 +1,127 @@
+Comentários e Anotações
+/* 
+    Utilizamos para criar comentários em CSS.
+    Comentários são úteis para documentar o código e explicar o que cada parte faz.
+    Eles não afetam a renderização do CSS e são ignorados pelo navegador.
+*/
+
+Anatomia do Código CSS
+/* 
+    - Seletor: Define o elemento HTML ao qual os estilos serão aplicados.
+    - Propriedade: A característica do elemento que será estilizada (ex: cor, tamanho).
+    - Valor: O valor atribuído à propriedade (ex: vermelho, 16px).
+    - Declaração: A combinação de propriedade e valor (ex: color: red;).
+    - Bloco de Declaração: Conjunto de declarações entre chaves, ex: 
+    h1 { color: red;
+      font-size: 16px;
+      letter-spacing: 2px;
+      text-transform: uppercase; 
+    }
+*/
+
+Cascata / Hierarquia de regras
+
+/* 
+    - O CSS é chamado de Cascading Style Sheets porque as regras podem ser aplicadas em cascata.
+    - A hierarquia de regras é determinada pela especificidade dos seletores e pela ordem em que aparecem.
+    - Regras mais específicas têm prioridade sobre regras menos específicas.
+    - Regras que aparecem por último têm prioridade sobre regras anteriores, se tiverem a mesma especificidade.
+    - A ordem de prioridade é: inline styles > IDs > classes > elementos.
+    - Exemplo de especificidade:
+        - .classe { color: red; }  classe tem menor especificidade - PESO 10
+        - #id { color: blue; }  id tem maior especificidade - PESO 100
+        - h1 { color: green; }  elemento tem menor especificidade - PESO 1
+        - Resultado: o elemento com id terá a cor azul.
+    - Exemplo de cascata:
+        - h1 { color: green; }  regra geral - PESO 1
+        - .classe { color: red; }  regra específica - PESO 10
+        - #id { color: blue; }  regra mais específica - PESO 100
+        - Resultado: o h1 ficará azul.
+    - Exemplo de ordem:
+        - h1 { color: green; }  regra geral - PESO 1
+        - h1 { color: red; }  regra mais específica, mas aparece depois - PESO 1
+        - Resultado: o h1 ficará vermelho.
+
+    - !important 
+        - A declaração !important pode ser usada para forçar uma regra a ter prioridade sobre outras.
+        - Exemplo: h1 { color: red !important; }  essa regra terá prioridade sobre outras regras.
+        - Use com cautela, pois pode dificultar a manutenção do código.
+        - Evite usar !important, a menos que seja absolutamente necessário.
+*/
+
+Valores e Unidades de Medidas
+/* 
+    - O CSS suporta várias unidades de medida, incluindo:
+        - px: pixels (unidade fixa)
+        - em: unidade relativa ao tamanho da fonte do elemento pai
+        - rem: unidade relativa ao tamanho da fonte do elemento raiz (html)
+        - %: porcentagem em relação ao elemento pai
+        - vh: porcentagem da altura da viewport (janela de visualização)
+        - vw: porcentagem da largura da viewport (janela de visualização)
+    - Exemplo de uso de unidades:
+        - font-size: 16px;  tamanho fixo
+        - font-size: 1.5em;  tamanho relativo ao elemento pai
+        - font-size: 1.5rem;  tamanho relativo ao elemento raiz
+        - width: 50%;  largura em porcentagem
+        - height: 100vh;  altura em porcentagem da viewport 
+    - O CSS também suporta unidades de medida para espaçamento, como:
+        - margin: 10px;  margem fixa
+        - padding: 1em;  preenchimento relativo ao elemento pai
+        - border-width: 2rem;  largura da borda relativa ao elemento raiz
+        - line-height: 1.5;  altura da linha relativa ao tamanho da fonte
+        - text-align: center;  alinhamento do texto
+        - text-decoration: underline;  decoração do texto (sublinhado)
+        - text-transform: uppercase;  transformação do texto (caixa alta)  
+*/
+
+Seletores CSS
+/* 
+    - Os seletores CSS são usados para selecionar os elementos HTML que serão estilizados.
+    - Existem vários tipos de seletores, incluindo:
+        - Seletor de elemento: seleciona todos os elementos de um tipo específico:
+        p { 
+            color: red; 
+        }
+        - Seletor de classe: seleciona todos os elementos com uma classe específica:
+        .classe { 
+            color: blue; 
+        }
+        - Seletor de ID: seleciona um elemento com um ID específico:        
+        #id { 
+            color: green; 
+        }
+        - Seletor de atributo: seleciona elementos com um atributo específico:
+        [type="text"] { 
+            color: yellow; 
+        }
+        - Seletor descendente: seleciona elementos dentro de outro elemento:
+        div p { 
+            color: orange; 
+        }
+        - Seletor filho direto: seleciona elementos que são filhos diretos de outro elemento:
+        div > p { 
+            color: purple; 
+        }
+        - Seletor adjacente: seleciona o próximo elemento irmão: 
+        h1 + p {
+            color: pink; 
+        }
+        - Seletor geral de irmãos: seleciona todos os irmãos seguintes: 
+        h1 ~ p { 
+            color: brown; 
+        }
+    - Exemplo de uso de seletores:
+        - p { color: red; }  todos os parágrafos ficarão vermelhos
+        - .classe { color: blue; }  todos os elementos com a classe "classe" ficarão azuis
+        - #id { color: green; }  o elemento com o ID "id" ficará verde
+        - [type="text"] { color: yellow; }  todos os elementos com o atributo type="text" ficarão amarelos
+        - div p { color: orange; }  todos os parágrafos dentro de uma div ficarão laranja
+        - div > p { color: purple; }  apenas os parágrafos filhos diretos de uma div ficarão roxos
+        - h1 + p { color: pink; }  o próximo parágrafo após um h1 ficará rosa
+        - h1 ~ p { color: brown; }  todos os parágrafos seguintes a um h1 ficarão marrons
+    - Os seletores podem ser combinados para criar seletores mais específicos.
+    - Exemplo de combinação de seletores:
+        - div.classe { color: red; }  todos os elementos div com a classe "classe" ficarão vermelhos
+        - #id .classe { color: blue; }  todos os elementos com a classe "classe" dentro do elemento com o ID "id" ficarão azuis
+        - div > .classe { color: green; }  todos os elementos com a classe "classe" que são filhos diretos de uma div ficarão verdes
+*/
