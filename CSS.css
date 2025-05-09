@@ -232,4 +232,5 @@
         - background-size: cover;  cobre todo o elemento com a imagem de fundo
         - background-position: center;  centraliza a imagem de fundo
         - background-shorthand: background: red url('imagem.jpg') no-repeat center / cover;  define a cor, imagem, repetição e posição de fundo em uma única linha
+        
 */
