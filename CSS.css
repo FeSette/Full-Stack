@@ -208,8 +208,28 @@
     - Web Fonts: O CSS permite o uso de fontes da web, como Google Fonts.
         No HTML:
         - <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">  importa a fonte Roboto
-        
+
         No CSS:
         - @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');  importa a fonte Roboto
         - font-family: 'Roboto', sans-serif;  aplica a fonte Roboto
+    
+# Cores e Fundos
+
+    - Cores: O CSS suporta várias formas de definir cores.
+
+        - Cores nomeadas: red, blue, green, etc.
+        - Cores hexadecimais: #ff0000 (vermelho), #00ff00 (verde), #0000ff (azul)
+        - Cores RGB: rgb(255, 0, 0) (vermelho), rgb(0, 255, 0) (verde), rgb(0, 0, 255) (azul)
+        - Cores RGBA: rgba(255, 0, 0, 0.5) (vermelho com opacidade de 50%)
+        - Cores HSL: hsl(120, 100%, 50%) (verde)
+        - Cores HSLA: hsla(120, 100%, 50%, 0.5) (verde com opacidade de 50%)
+
+    - Fundos: A propriedade background define o fundo de um elemento.
+
+        - background-color: red;  define a cor de fundo
+        - background-image: url('imagem.jpg');  define a imagem de fundo
+        - background-repeat: no-repeat;  não repete a imagem de fundo
+        - background-size: cover;  cobre todo o elemento com a imagem de fundo
+        - background-position: center;  centraliza a imagem de fundo
+        - background-shorthand: background: red url('imagem.jpg') no-repeat center / cover;  define a cor, imagem, repetição e posição de fundo em uma única linha
 */
