@@ -122,10 +122,6 @@
         - #id .classe { color: blue; }  todos os elementos com a classe "classe" dentro do elemento com o ID "id" ficarão azuis
         - div > .classe { color: green; }  todos os elementos com a classe "classe" que são filhos diretos de uma div ficarão verdes
 
-*/
-
-/*
-
 # Box Model
 
     - O modelo de caixa é a forma como o CSS representa os elementos na página.
@@ -152,7 +148,9 @@
             border: 2px solid black; 
             margin: 20px; 
         }
-    # Display: A propriedade display controla como um elemento é exibido na página.
+
+    - Display: A propriedade display controla como um elemento é exibido na página.
+        
         - block: o elemento ocupa toda a largura disponível e começa em uma nova linha.
             - Elementos: div, main, header, section, p, h...
         - inline: o elemento ocupa apenas o espaço necessário e não começa em uma nova linha.
@@ -160,20 +158,58 @@
         - inline-block: o elemento ocupa apenas o espaço necessário, mas permite definir largura e altura.
         - flex: o elemento se torna um contêiner flexível, permitindo layout flexível de seus filhos.
         - grid: o elemento se torna um contêiner de grade, permitindo layout em grade de seus filhos.
-    # Border: A propriedade border define a borda de um elemento.
+    
+    - Border: A propriedade border define a borda de um elemento.
+
         - border: 2px solid black;  borda de 2 pixels sólida e preta
         - border-bottom: 2px solid black;  borda inferior de 2 pixels sólida e preta
-    # Width e Height: As propriedades width e height definem a largura e altura de um elemento.
+
+    - Width e Height: As propriedades width e height definem a largura e altura de um elemento.
+
         - width: 200px;  largura de 200 pixels
         - height: 100px;  altura de 100 pixels
-    # Margin: A propriedade margin define o espaço externo de um elemento.
+
+    - Margin: A propriedade margin define o espaço externo de um elemento.
+
         - margin: 20px;  margem de 20 pixels em todos os lados
         - margin: auto;  margem automática, centralizando o elemento
         - margin-top: 10px;  margem superior de 10 pixels
-    # Padding: A propriedade padding define o espaço interno de um elemento.
+
+    - Padding: A propriedade padding define o espaço interno de um elemento.
         - padding: 10px;  preenchimento de 10 pixels em todos os lados
         - padding-top: 10px;  preenchimento superior de 10 pixels
-    # BoxSizing: A propriedade box-sizing controla como a largura e altura de um elemento são calculadas.
+
+    - BoxSizing: A propriedade box-sizing controla como a largura e altura de um elemento são calculadas.
+
         - box-sizing: content-box;  padrão, largura e altura incluem apenas o conteúdo
-        - box-sizing: border-box;  largura e altura incluem o preenchimento e a borda    
+        - box-sizing: border-box;  largura e altura incluem o preenchimento e a borda  
+        
+# Fontes e Textos
+
+    - Fontes: A propriedade font define a fonte de um elemento.
+
+        - font-family: Arial, sans-serif;  define a família da fonte
+        - font-size: 16px;  define o tamanho da fonte
+        - font-weight: bold;  define o peso da fonte (negrito)
+        - font-style: italic;  define o estilo da fonte (itálico)
+        - font-variant: small-caps;  define a variante da fonte (caixa baixa)
+        - font-stretch: condensed;  define o estiramento da fonte (condensada)
+
+    - Texto: A propriedade text define o estilo do texto de um elemento.
+
+        - color: red;  define a cor do texto
+        - text-align: center;  alinha o texto ao centro
+        - text-decoration: underline;  sublinha o texto
+        - text-transform: uppercase;  transforma o texto em caixa alta
+        - letter-spacing: 2px;  define o espaçamento entre letras
+        - word-spacing: 5px;  define o espaçamento entre palavras
+        - line-height: 1.5;  define a altura da linha
+
+    - Web Fonts: O CSS permite o uso de fontes da web, como Google Fonts.
+        No HTML:
+        - <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">  importa a fonte Roboto
+        
+        No CSS:
+        - @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');  importa a fonte Roboto
+        - font-family: 'Roboto', sans-serif;  aplica a fonte Roboto
 */
