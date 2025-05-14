@@ -276,4 +276,23 @@
             - :root { --cor-primaria: #3498db; }
             - .secao { --cor-primaria: #e74c3c; }  sobrescreve a variável cor-primaria apenas dentro da classe secao
             - background-color: var(--cor-primaria);  usa a variável cor-primaria como cor de fundo 
+
+# pseudo-classes e pseudo-elementos
+
+    - Pseudo-classes: As pseudo-classes permitem aplicar estilos a um elemento com base em seu estado ou posição.
+        - :hover: aplica estilos quando o mouse passa sobre o elemento
+        - :active: aplica estilos quando o elemento é clicado
+        - :focus: aplica estilos quando o elemento recebe foco (ex: campo de entrada)
+        - :nth-child(n): aplica estilos ao número n filho de um elemento pai
+        - :first-child: aplica estilos ao primeiro filho de um elemento pai
+        - :last-child: aplica estilos ao último filho de um elemento pai
+        - :not(): aplica estilos a elementos que não correspondem a um seletor específico
+        - :has(): aplica estilos a elementos que contêm um elemento específico
+
+    - Pseudo-elementos: Os pseudo-elementos permitem aplicar estilos a partes específicas de um elemento.
+        - ::before: insere conteúdo antes do conteúdo do elemento
+        - ::after: insere conteúdo após o conteúdo do elemento
+        - ::first-letter: aplica estilos à primeira letra do conteúdo do elemento
+        - ::first-line: aplica estilos à primeira linha do conteúdo do elemento
+
 */
