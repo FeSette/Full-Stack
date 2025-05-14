@@ -262,4 +262,5 @@
         - absolute: o elemento é posicionado em relação ao seu ancestral mais próximo com position diferente de static
         - fixed: o elemento é posicionado em relação à viewport e não se move ao rolar a página
         - sticky: o elemento é tratado como relative até que atinja um determinado ponto, depois se torna fixed
+        - z-index: 10;  define a ordem de empilhamento do elemento (quanto maior o valor, mais acima ele fica)
 */
