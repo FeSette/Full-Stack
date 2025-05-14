@@ -263,4 +263,17 @@
         - fixed: o elemento é posicionado em relação à viewport e não se move ao rolar a página
         - sticky: o elemento é tratado como relative até que atinja um determinado ponto, depois se torna fixed
         - z-index: 10;  define a ordem de empilhamento do elemento (quanto maior o valor, mais acima ele fica)
+
+# Variaveis CSS
+
+    - As variáveis CSS permitem armazenar valores reutilizáveis em todo o CSS.
+        - :root { --cor-primaria: #3498db; }  define uma variável chamada cor-primaria
+        - background-color: var(--cor-primaria);  usa a variável cor-primaria como cor de fundo
+        - As variáveis podem ser usadas para cores, tamanhos, espaçamentos, etc.
+        - As variáveis podem ser definidas em qualquer lugar, mas é comum defini-las no :root para torná-las globais.
+        - As variáveis podem ser sobrescritas em seletores específicos.
+        - Exemplo: 
+            - :root { --cor-primaria: #3498db; }
+            - .secao { --cor-primaria: #e74c3c; }  sobrescreve a variável cor-primaria apenas dentro da classe secao
+            - background-color: var(--cor-primaria);  usa a variável cor-primaria como cor de fundo 
 */
