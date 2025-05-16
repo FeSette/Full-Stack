@@ -295,4 +295,19 @@
         - ::first-letter: aplica estilos à primeira letra do conteúdo do elemento
         - ::first-line: aplica estilos à primeira linha do conteúdo do elemento
 
+# Flexbox
+
+    - Flexbox é um modelo de layout unidimensional que permite alinhar e distribuir espaço entre itens em um contêiner.
+    - Propriedades do contêiner flexível:
+        - display: flex;  ativa o modelo de layout flexível
+        - flex-direction: row;  define a direção dos itens (horizontal)
+        - justify-content: center;  alinha os itens no centro do contêiner
+        - align-items: stretch;  estica os itens para preencher o contêiner
+        - flex-wrap: wrap;  permite que os itens se movam para a próxima linha se não houver espaço suficiente
+    - Propriedades dos itens flexíveis:
+        - flex-grow: 1;  permite que o item cresça para preencher o espaço disponível
+        - flex-shrink: 1;  permite que o item encolha se não houver espaço suficiente
+        - flex-basis: 100px;  define a largura inicial do item
+        - order: 2;  define a ordem em que os itens aparecem no contêiner
+
 */
