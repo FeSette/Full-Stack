@@ -304,6 +304,7 @@
         - justify-content: center;  alinha os itens no centro do contêiner
         - align-items: stretch;  estica os itens para preencher o contêiner
         - flex-wrap: wrap;  permite que os itens se movam para a próxima linha se não houver espaço suficiente
+        
     - Propriedades dos itens flexíveis:
         - flex-grow: 1;  permite que o item cresça para preencher o espaço disponível
         - flex-shrink: 1;  permite que o item encolha se não houver espaço suficiente
