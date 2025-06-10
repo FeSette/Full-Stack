@@ -33,11 +33,20 @@ Exemplo:
 
 .grid-template {
     display: grid;
+
+    -- Grid Template Columns:
     grid-template-columns: 100px 200px; (Define duas colunas, a primeira com 100px e a segunda com 200px)
-    #OU
+    
     grid-template-columns: repeat(3, 1fr); (Define três colunas de tamanho igual)
-    #OU
+    
     grid-template-columns: 1fr 2fr; (Define duas colunas, a primeira com 1 fração do espaço disponível e a segunda com 2 frações)
+
+    -- Grid Template Rows:
+    grid-template-rows: 100px 200px; (Define duas linhas, a primeira com 100px e a segunda com 200px)
+
+    grid-template-rows: repeat(3, 1fr); (Define três linhas de tamanho igual)
+
+    grid-template-rows: 1fr 2fr; (Define duas linhas, a primeira com 1 fração do espaço disponível e a segunda com 2 frações)
 
 
 */
