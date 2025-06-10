@@ -1,0 +1,43 @@
+/*
+
+O CSS Grid Layout é um sistema de layout bidimensional que permite criar layouts complexos de forma mais fácil e intuitiva. Ele divide a página em linhas e colunas, permitindo que você posicione os elementos de forma precisa.
+
+## Propriedades fundamentais do CSS Grid:
+
+Todo GRID é composto de 2 principais componentes: **Grid Container** e **Grid Items**.
+- **Grid Container**: É o elemento pai que contém os itens do grid. Para definir um elemento como grid container, você usa a propriedade `display: grid;`.
+- **Grid Items**: São os elementos filhos dentro do grid container. Eles são automaticamente tratados como itens de grid quando o elemento pai é definido como grid container.
+
+Exemplo:
+
+-- HTML:
+<div id="grid-example">
+    <div>1</div>
+    <span>2</span>
+    <span>3</span>
+</div>
+
+-- CSS:
+#grid-example {
+    display: grid; (ou display: inline-grid; para grids inline)
+}
+
+## Grids templates:
+.grid-template: É uma propriedade abreviada que combina `grid-template-rows`, `grid-template-columns` e `grid-template-areas`.
+
+.grid-template-columns: Define o número e o tamanho das colunas do grid.
+.grid-template-rows: Define o número e o tamanho das linhas do grid.
+.grid-template-areas: Define áreas nomeadas dentro do grid, permitindo um layout mais semântico e fácil de entender.
+
+Exemplo:
+
+.grid-template {
+    display: grid;
+    grid-template-columns: 100px 200px; (Define duas colunas, a primeira com 100px e a segunda com 200px)
+    #OU
+    grid-template-columns: repeat(3, 1fr); (Define três colunas de tamanho igual)
+    #OU
+    grid-template-columns: 1fr 2fr; (Define duas colunas, a primeira com 1 fração do espaço disponível e a segunda com 2 frações)
+
+
+*/
