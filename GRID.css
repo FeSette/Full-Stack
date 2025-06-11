@@ -4,23 +4,22 @@ O CSS Grid Layout é um sistema de layout bidimensional que permite criar layout
 
 ## Propriedades fundamentais do CSS Grid:
 
-Todo GRID é composto de 2 principais componentes: **Grid Container** e **Grid Items**.
-- **Grid Container**: É o elemento pai que contém os itens do grid. Para definir um elemento como grid container, você usa a propriedade `display: grid;`.
-- **Grid Items**: São os elementos filhos dentro do grid container. Eles são automaticamente tratados como itens de grid quando o elemento pai é definido como grid container.
+    Todo GRID é composto de 2 principais componentes: **Grid Container** e **Grid Items**.
+    - **Grid Container**: É o elemento pai que contém os itens do grid. Para definir um elemento como grid container, você usa a propriedade `display: grid;`.
+    - **Grid Items**: São os elementos filhos dentro do grid container. Eles são automaticamente tratados como itens de grid quando o elemento pai é definido como grid container.
 
-Exemplo:
+    Exemplo:
 
--- HTML:
-<div id="grid-example">
-    <div>1</div>
-    <span>2</span>
-    <span>3</span>
-</div>
-
--- CSS:
-#grid-example {
-    display: grid; (ou display: inline-grid; para grids inline)
-}
+    -- HTML:
+    <div id="grid-example">
+        <div>1</div>
+        <span>2</span>
+        <span>3</span>
+    </div>
+    -- CSS:
+    #grid-example {
+        display: grid; (ou display: inline-grid; para grids inline)
+    }
 
 ## Grids templates:
     .grid-template: É uma propriedade abreviada que combina `grid-template-rows`, `grid-template-columns` e `grid-template-areas`.
@@ -95,5 +94,13 @@ Exemplo:
     "footer footer footer" 50px / 1fr 2fr 1fr;
 
     -- A primeira parte define as áreas do grid, a segunda parte define as linhas e a terceira parte define as colunas.
+
+## PROPRIEDADES DE ALINHAMENTO:
+    .align-content: Alinha o conteúdo do grid ao longo do eixo transversal (vertical).
+    .justify-content: Alinha o conteúdo do grid ao longo do eixo principal (horizontal).
+    .place-content: É uma propriedade abreviada que combina `align-content` e `justify-content`, alinhando o conteúdo do grid em ambos os eixos.
+
+
+    
 
 */
