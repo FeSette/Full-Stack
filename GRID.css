@@ -59,4 +59,25 @@ Exemplo:
     .grid-row-end: Define a linha final onde o item de grid deve terminar.
     .grid-row: 1 / 3; (O item começa na linha 1 e termina na linha 3, ocupando duas linhas)
 
+## Grid Template Areas:
+
+    .grid-template-areas: Define áreas nomeadas dentro do grid, permitindo um layout mais semântico e fácil de entender. As áreas são definidas usando nomes entre aspas, e os itens do grid podem ser atribuídos a essas áreas.
+
+    .grid-template-areas:
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+
+    -- Atribuindo áreas aos itens do grid:
+    .header {
+        grid-area: header;
+    }
+    .main {
+        grid-area: main;
+    }
+    .footer {
+        grid-area: footer;
+    }
+
+
 */
