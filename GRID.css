@@ -104,6 +104,9 @@ O CSS Grid Layout é um sistema de layout bidimensional que permite criar layout
     .justify-items: Alinha os itens do grid ao longo do eixo principal (horizontal).
     .place-items: É uma propriedade abreviada que combina `align-items` e `justify-items`, alinhando os itens do grid em ambos os eixos.
 
+    .align-self: Alinha um item específico do grid ao longo do eixo transversal (vertical).
+    .justify-self: Alinha um item específico do grid ao longo do eixo principal (horizontal).
+    .place-self: É uma propriedade abreviada que combina `align-self` e `justify-self`, alinhando um item específico do grid em ambos os eixos.
 
     
 
