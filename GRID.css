@@ -79,5 +79,10 @@ Exemplo:
         grid-area: footer;
     }
 
+## Grid Gap:
+    .grid-gap: Define o espaçamento entre as linhas e colunas do grid. É uma propriedade abreviada que combina `grid-row-gap` e `grid-column-gap`.
 
+    .grid-row-gap: Define o espaçamento entre as linhas do grid.
+    .grid-column-gap: Define o espaçamento entre as colunas do grid.
+    .grid-gap: 10px; (Define um espaçamento de 10px entre todas as linhas e colunas)
 */
