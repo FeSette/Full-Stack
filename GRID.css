@@ -85,4 +85,15 @@ Exemplo:
     .grid-row-gap: Define o espaçamento entre as linhas do grid.
     .grid-column-gap: Define o espaçamento entre as colunas do grid.
     .grid-gap: 10px; (Define um espaçamento de 10px entre todas as linhas e colunas)
+
+## shorthand Grid Template:
+    .grid-template: É uma propriedade abreviada que combina `grid-template-rows`, `grid-template-columns` e `grid-template-areas`.
+
+    .grid-template: 
+    "header header header" 100px
+    "main main aside" 1fr
+    "footer footer footer" 50px / 1fr 2fr 1fr;
+
+    -- A primeira parte define as áreas do grid, a segunda parte define as linhas e a terceira parte define as colunas.
+
 */
