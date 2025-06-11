@@ -108,6 +108,10 @@ O CSS Grid Layout é um sistema de layout bidimensional que permite criar layout
     .justify-self: Alinha um item específico do grid ao longo do eixo principal (horizontal).
     .place-self: É uma propriedade abreviada que combina `align-self` e `justify-self`, alinhando um item específico do grid em ambos os eixos.
 
+## PROPRIEDADES GRID AUTO:
+    .grid-auto-columns: Define o tamanho das colunas criadas automaticamente pelo grid quando novos itens são adicionados.
+    .grid-auto-rows: Define o tamanho das linhas criadas automaticamente pelo grid quando novos itens são adicionados.
+    .grid-auto-flow: Controla como os itens são colocados no grid quando não há espaço suficiente. Pode ser `row` (padrão), `column`, `dense` ou uma combinação.
     
 
 */
