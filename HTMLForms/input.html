@@ -1,0 +1,113 @@
+<!-- Atributos Gerais-->
+<span><strong>ATRIBUTOS GERAIS</strong></span><br><br>
+<form>
+    <input value="teste"> <!-- value = define uma descrição dentro da caixa -->
+    <button>Submit</button><br>
+    <input size="20"> <!-- size = define o tamanho da caixa -->
+    <button>Submit</button><br>
+    <input autofocus> <!-- autofocus = caixa recebe foco automaticamente -->
+    <button>Submit</button><br>
+    <input disabled> <!-- disabled = caixa desabilitada -->
+    <button>Submit</button><br>
+    <input value="leitura" readonly> <!-- readonly = caixa somente leitura -->
+    <button>Submit</button><br>
+    <input form="formulario"> <!-- form = define a caixa como parte de um formulário -->
+    <button>Submit</button><br>
+    <input required> <!-- required = campo obrigatório -->
+    <button>Submit</button><br>
+    <input placeholder="Digite seu nome"> <!-- placeholder = texto de ajuda dentro da caixa -->
+    <button>Submit</button><br>
+</form>
+
+<!-- Input tipo texto-->
+<span><strong>INPUT DE TEXTO</strong></span><br><br>
+<form>
+    <input type="text"> <!-- type = tipo de dados que caixa irá receber -->
+    <button>Submit</button><br>
+    <input name="nome"> <!-- name = a caixa tem o nome definido -->
+    <button>Submit</button><br>
+</form>
+
+<!-- Input tipo número -->
+<span><strong>INPUT TIPO NÚMERO</strong></span><br><br>
+<form>
+    <input type="number"> 
+    <button>Submit</button><br>
+    <input type="number" min="18" max="25"> <!-- min e max = define o intervalo de valores -->
+    <button>Submit</button><br>
+    <input type="number" step="2"> <!-- step = define o incremento do valor -->
+    <button>Submit</button><br>
+</form> 
+
+<!--Input tipo email-->
+<span><strong>INPUT TIPO EMAIL</strong></span><br><br>
+<form>
+    <input type="email" name="mail">
+    <button>Submit</button><br>
+    <input type="email" name="mail" multiple> <!-- multiple = permite múltiplos emails -->
+    <button>Submit</button><br>
+    <input type="email" name="mail" minlength="10"> <!-- minlength = define o tamanho mínimo do email -->
+    <button>Submit</button><br>
+    <input type="email" name="mail" maxlength="50"> <!-- maxlength = define o tamanho máximo do email -->
+    <button>Submit</button><br>
+    <input type="email" name="mail" pattern=".+@rockeseat\.com"> <!-- pattern = define um padrão de email -->
+    <button>Submit</button><br>
+    <input type="email" name="mail" pattern=".+@rockeseat\.com" title="Apenas emails da Rockeseat são permitidos"> <!-- title = define uma mensagem de erro personalizada -->
+    <button>Submit</button><br>
+</form>
+
+<!-- Input tipo senha -->
+<span><strong>INPUT TIPO SENHA</strong></span><br><br>
+<form>
+    <input type="password" name="senha">
+    <button>Submit</button><br>
+    <input type="password" name="senha" minlength="6"> <!-- minlength = define o tamanho mínimo da senha -->
+    <button>Submit</button><br>
+    <input type="password" name="senha" maxlength="12"> <!-- maxlength = define o tamanho máximo da senha -->
+    <button>Submit</button><br>
+    <input type="password" name="senha" inputmode="numeric"> <!-- inputmode = define o tipo de teclado que será exibido (Apenas em celulares - abre o teclado numerico) -->
+    <button>Submit</button><br>
+    <input type="password" name="senha" pattern="[0-9a-fA-F]{6,12}"> <!-- pattern = define um padrão de senha -->
+    <button>Submit</button><br>
+</form>
+
+<!--Input tipo Arquivos-->
+<span><strong>INPUT TIPO FILES</strong></span><br><br>
+<form enctype="multipart/form-data"> <!-- enctype = define o tipo de codificação do formulário (Necessário para receber arquivos)-->
+    <input type="file" name="foto"> <!-- type = file = caixa para upload de arquivos -->
+    <button>Submit</button><br>
+    <input type="file" name="arquivo" accept=".jpg, .png, .gif"> <!-- accept = define os tipos de arquivos aceitos -->
+    <button>Submit</button><br>
+    <input type="file" name="arquivo" multiple> <!-- multiple = permite múltiplos arquivos -->
+    <button>Submit</button><br>
+</form>
+
+<!--Input tipo Range-->
+<span><strong>INPUT TIPO RANGE</strong></span><br><br>
+<form>
+    <input type="range" name="volume"> <!-- type = range = caixa deslizante -->
+    <button>Submit</button><br>
+    <input type="range" name="volume" min="0" max="100"> <!-- min e max = define o intervalo de valores -->
+    <button>Submit</button><br>
+    <input type="range" name="volume" step="10"> <!-- step = define o incremento do valor -->
+    <button>Submit</button><br>
+    <input type="range" name="volume" value="10"> <!-- value = define o valor inicial da caixa -->
+    <button>Submit</button><br>
+</form>
+
+<!--Input tipo Cor-->
+<span><strong>INPUT TIPO COLOR</strong></span><br><br>
+<form>
+    <datalist id="cores">
+        <option value="#ff0000">Vermelho</option>
+        <option value="#00ff00">Verde</option>
+        <option value="#0000ff">Azul</option>
+        <option value="#ffff00">Amarelo</option>
+    </datalist>
+    <input type="color" name="cor"> <!-- type = color = caixa de seleção de cor -->
+    <button>Submit</button><br>
+    <input type="color" name="cor" value="#ff0000"> <!-- value = define a cor inicial -->
+    <button>Submit</button><br>
+    <input type="color" name="cor" list="cores"> <!-- list = define uma lista de cores pré-definidas -->
+    <button>Submit</button><br>
+</form>
