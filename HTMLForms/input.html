@@ -111,3 +111,40 @@
     <input type="color" name="cor" list="cores"> <!-- list = define uma lista de cores pré-definidas -->
     <button>Submit</button><br>
 </form>
+
+<!--Input tipo Checkbox-->
+<span><strong>INPUT TIPO CHECKBOX</strong></span><br><br>
+<form>
+    <input type="checkbox" name="cor" value="vermelho"> 
+    <button>Submit</button><br>
+    <input type="checkbox" name="cor" value="verde" checked> <!-- checked = caixa selecionada por padrão -->
+    <button>Submit</button><br>
+</form>
+
+<!--Input tipo Radio-->
+<span><strong>INPUT TIPO RADIO</strong></span><br><br>
+<form>
+    <input type="radio" name="cor" value="vermelho">
+    <input type="radio" name="cor" value="verde" checked> <!-- checked = caixa selecionada por padrão -->
+    <input type="radio" name="cor" value="azul"> 
+    <button>Submit</button><br>
+</form>
+
+<!--Input tipo hidden-->
+<span><strong>INPUT TIPO HIDDEN</strong></span><br><br>
+<form>
+    <input type="hidden" name="id" value="12345"> <!-- Fica invisível e a informação é enviada via formulário, value seria um "token" -->
+    <button>Submit</button><br>
+</form>
+
+<!--Input tipo Label-->
+<span><strong>INPUT TIPO LABEL</strong></span><br><br>
+<form>
+    <label for="nome">Nome:</label> <!-- for = associa o label ao input -->
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome"> <!-- id = associa o input ao label -->
+    <button>Submit</button><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Digite seu email">
+    <button>Submit</button><br>
+</form>
+
