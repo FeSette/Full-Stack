@@ -148,3 +148,45 @@
     <button>Submit</button><br>
 </form>
 
+<!--Input tipo TextArea-->
+<span><strong>INPUT TIPO TEXTAREA</strong></span><br><br>
+<form>
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem"></textarea> <!-- textarea = caixa de texto para mensagens maiores -->
+    <button>Submit</button><br>
+    <label for="comentario">Comentário:</label>
+    <textarea id="comentario" name="comentario" maxlength="200"></textarea> <!-- maxlength = define o tamanho máximo do texto -->
+    <button>Submit</button><br>
+</form>
+
+<!--Input tipo Select-->
+<span><strong>INPUT TIPO SELECT</strong></span><br><br>
+<form>
+    <label for="opcao">Opção:</label>
+    <select id="opcao" name="opcao"> <!-- select = caixa de seleção -->
+        <option value="opcao1">Opção 1</option>
+        <option value="opcao2">Opção 2</option>
+        <option value="opcao3" selected>Opção 3</option> <!-- selected = opção selecionada por padrão -->
+    </select>
+    <button>Submit</button><br>
+    <label for="frutas">Frutas:</label>
+    <select id="frutas" name="frutas" multiple> <!-- multiple = permite múltiplas seleções -->
+        <option value="banana">Banana</option>
+        <option value="maçã">Maçã</option>
+        <option value="laranja">Laranja</option>
+    </select>
+    <button>Submit</button><br>
+</form>
+
+<!--Input tipo Fieldset-->
+<span><strong>INPUT TIPO FIELDSET</strong></span><br><br>
+<form>
+    <fieldset> <!-- fieldset = agrupa elementos de formulário -->
+        <legend>Informações Pessoais</legend> <!-- legend = título do fieldset -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email">
+        <button>Submit</button><br>
+    </fieldset>
+</form>
